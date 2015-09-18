@@ -1,0 +1,22 @@
+plugins {
+	id "java"
+	id "maven"
+}
+
+sourceCompatibility = 1.7
+group = "se.gustavkarlsson.aurora-notifier"
+version = "1.0-SNAPSHOT"
+
+wrapper() {
+	gradleVersion = "2.7"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile "com.squareup.retrofit:retrofit:2.0.0-beta1"
+}
+
+defaultTasks "install"
