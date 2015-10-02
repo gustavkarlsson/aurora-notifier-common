@@ -1,10 +1,10 @@
 package se.gustavkarlsson.aurora_notifier.common.service;
 
 import retrofit.http.GET;
-import se.gustavkarlsson.aurora_notifier.common.domain.KpIndexReport;
+import se.gustavkarlsson.aurora_notifier.common.domain.Timestamped;
 
 public interface KpIndexService {
 
 	@GET("/kp-index")
-	KpIndexReport getKpIndex();
+	Timestamped<Float> get();
 }
