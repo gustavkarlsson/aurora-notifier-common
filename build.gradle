@@ -25,5 +25,11 @@ dependencies {
 	testCompile "com.fasterxml.jackson.core:jackson-databind:2.6.2"
 }
 
+scmVersion {
+	tag {
+		prefix = "aurora-notifier-common"
+	}
+}
+
 defaultTasks "install"
 
