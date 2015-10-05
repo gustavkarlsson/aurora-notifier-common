@@ -15,13 +15,13 @@ public class TimestampedTest {
 	public static final String JSON = "{\"value\": \"foobar\", \"timestamp\": 1444033913849}";
 
 	@Test
-	public void serializesToJSON() throws Exception {
+	public void serializesToJson() throws Exception {
 		final String expected = MAPPER.writeValueAsString(VALUE);
 		assertThat(MAPPER.writeValueAsString(VALUE)).isEqualTo(expected);
 	}
 
 	@Test
-	public void deserializesFromJSON() throws Exception {
+	public void deserializesFromJson() throws Exception {
 		assertThat(MAPPER.readValue(JSON, Timestamped.class)).isEqualTo(VALUE);
 	}
 
